@@ -5,10 +5,14 @@ import fr.einfolearning.tp2.metiers.TextBuffer;
 
 import org.junit.jupiter.api.Assertions;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
+
 public class TextBufferTest {
 
   @Test
-  public void should_get_correct_text_when_instanciate_textbuffer_with_text_() {
+  public void Texte_Correct() {
 
     // Arrange
 
@@ -22,12 +26,12 @@ public class TextBufferTest {
 
 
     // Assert
-    Assertions.assertEquals(expectedName, text);
+    assertThat(expectedName, equalTo(text));
 
     }
   
   @Test
-  public void should_get_correct_text_when_instanciate_textbuffer_with_text_with_substr_() {
+  public void Text_Correct2() {
 
     // Arrange
 
@@ -41,12 +45,12 @@ public class TextBufferTest {
 
 
     // Assert
-    Assertions.assertEquals(expectedName, text);
+    assertThat(expectedName, equalTo(text));
 
     }
   
   @Test
-  public void should_get_correct_text_when_instanciate_textbuffer_with_text_with_modification_from_ins_() {
+  public void Text_Correct3() {
 
     // Arrange
 
@@ -61,12 +65,12 @@ public class TextBufferTest {
 
 
     // Assert
-    Assertions.assertEquals(expectedName, text);
+    assertThat(expectedName, equalTo(text));
 
     }
   
   @Test
-  public void should_get_correct_text_when_instanciate_textbuffer_with_text_with_modification_from_del_() {
+  public void Text_Correct4() {
 
     // Arrange
 
@@ -81,12 +85,12 @@ public class TextBufferTest {
 
 
     // Assert
-    Assertions.assertEquals(expectedName, text);
+    assertThat(expectedName, equalTo(text));
 
     }
   
   @Test
-  public void should_get_correct_length_when_instanciate_textbuffer_with_text_() {
+  public void Good_Number_Given() {
 
     // Arrange
 
@@ -100,7 +104,7 @@ public class TextBufferTest {
 
 
     // Assert
-    Assertions.assertEquals(expectedNumber, number);
+    assertThat(expectedNumber, equalTo(number));
 
     }
   
